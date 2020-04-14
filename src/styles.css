@@ -1,6 +1,9 @@
 body{
     text-align: center;
     background-color: bisque;
+    font-family: monospace;
+    font-size: 28px;
+
 }
 
 #mexicoInfo {
@@ -14,3 +17,15 @@ body{
 #mtRainierInfo {
     display:none;
 }
+
+
+#firstLocation, #firstLandmark, #firstTime, #firstNote, #secondLocation, #secondLandmark, #secondTime,#secondNote, #thirdLocation, #thirdLandmark, #thirdTime, #thirdNote {
+   font-size: 45px;
+}
+
+#pic {
+    height: 500px;
+    width: 1000;
+    border-radius: 35px;
+}
+

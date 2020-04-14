@@ -12,15 +12,17 @@ $(document).ready(function(){
 
   $("#firstBtn").click(function(event){
     event.preventDefault();
-    var locationInputFirst = $("input#placeInputFirst");
-    var landmarkInputFirst = $("input#landmarkInputFirst");
-    var timeInputFirst = $("input#inputTimeFirst");
-    var notesInputFirst = $("input#notesInputFirst");
+    var locationInputFirst = $("#placeInputFirst");
+    var landmarkInputFirst = $("#landmarkInputFirst");
+    var timeInputFirst = $("#inputTimeFirst");
+    var notesInputFirst = $("#notesInputFirst");
     var firstPlace = new Place(locationInputFirst.val(), landmarkInputFirst.val(), timeInputFirst.val(), notesInputFirst.val());
     $("#firstLocation").text("Location: " + firstPlace.location);
     $("#firstLandmark").text("Landmark: " + firstPlace.landmarks);
     $("#firstTime").text("Time of Year : " + firstPlace.timeOfYear);
     $("#firstNote").text("Notes: " + firstPlace.notes);
+    $("#firstDisplay").fadeOut(500);
+    
   });
 
 
@@ -36,6 +38,7 @@ $(document).ready(function(){
     $("#secondLandmark").text("Landmark: " + secondPlace.landmarks);
     $("#secondTime").text("Time of Year : " + secondPlace.timeOfYear);
     $("#secondNote").text("Notes: " + secondPlace.notes);
+    $("#secondDisplay").fadeOut(500);
   });
 
   $("#thirdBtn").click(function(event){
@@ -49,6 +52,7 @@ $(document).ready(function(){
     $("#thirdLandmark").text("Landmark: " + thirdPlace.landmarks);
     $("#thirdTime").text("Time of Year : " + thirdPlace.timeOfYear);
     $("#thirdNote").text("Notes: " + thirdPlace.notes);
+    $("#thirdDisplay").fadeOut(500);
   });
 });
 
