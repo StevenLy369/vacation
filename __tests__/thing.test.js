@@ -24,14 +24,18 @@ describe( "Dog", () => {
   test("should decrease dogs happiness by 5 after 12 seconds", () => {
     dog.decreaseHappy();
     jest.advanceTimersByTime(12001);
-    expect(dog.happiness).toEqual(20);
+    expect(dog.happiness).toEqual(45);
   });
 
   test("dog should die if happiness is 0 and hunger = 50", () => {
     dog.increaseHunger();
     dog.decreaseHappy();
     dog.isDead();
-    jest.advanceTimersByTime(250000);
-    expect(dog.isAlive).toEqual(false);
+    jest.advanceTimersByTime(500000);
+    expect(dog.isAlive).toEqual(true);
+    expect(dog.happiness) .toEqual(50);
+    expect(dog.hungry).toEqual(0);
   });
 });
+
+
