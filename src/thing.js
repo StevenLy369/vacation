@@ -10,6 +10,7 @@ export function Dog(){
   this.hungry = 0,
   this.happiness = 50,
   this.isAlive = true;
+  this.anger = 0;
 }
 
 
@@ -21,6 +22,12 @@ Dog.prototype.decreaseHappy = function() {
       return this.isAlive = false;
     }
   },250);
+};
+
+Dog.prototype.increaseHunger = function() {
+  setInterval(() => {
+    return this.hungry += 5;
+  }, 8000);
 };
 
 

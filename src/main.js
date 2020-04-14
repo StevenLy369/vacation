@@ -1,19 +1,19 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import { Dog } from './thing.js'
-import $ from 'jquery';
+// import { Dog } from './thing.js'
+// import $ from 'jquery';
 // import { Place } from './thing.js';
 
 
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
  
-  $("#decreaseHappy").click(function(){
-    // decreaseHappy();
-   console.log("woof");
-});
+//   $("#decreaseHappy").click(function(){
+    
+//    console.log("woof");
+// });
 
 
-});
+// });
