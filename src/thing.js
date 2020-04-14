@@ -15,12 +15,8 @@ export function Dog(){
 
 Dog.prototype.decreaseHappy = function() {
   setInterval (()=>{
-    if(this.hungry === 25){
-      return this.happiness /2;
-    } if(this.hungry === 50){
-      return this.isAlive = false;
-    }
-  },250);
+    return this.happiness -= 5
+  },12000);
 };
 
 Dog.prototype.increaseHunger = function() {
