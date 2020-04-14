@@ -6,11 +6,22 @@ export function Place(location, landmarks, timeOfYear, notes){
   this.notes = notes;
 }
 
+export function Dog(){
+  this.hungry = 0,
+  this.happiness = 50,
+  this.isAlive = true;
+}
 
-var place = new Place;
 
-// Place.prototype.addLocation(location){
-//   var location = $("#placeInputFirst");
-//   var landmarks = 
+Dog.prototype.decreaseHappy = function() {
+  setInterval (()=>{
+    if(this.hungry === 25){
+      return this.happiness /2;
+    } if(this.hungry === 50){
+      return this.isAlive = false;
+    }
+  },250);
+};
 
-// }
+
+

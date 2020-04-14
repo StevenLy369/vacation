@@ -1,7 +1,8 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-// import $ from 'jquery';
+import { Dog } from './thing.js'
+import $ from 'jquery';
 // import { Place } from './thing.js';
 
 
@@ -9,7 +10,10 @@ import './styles.css';
 
 $(document).ready(function(){
  
-   
+  $("#decreaseHappy").click(function(){
+    // decreaseHappy();
+   console.log("woof");
+});
 
 
 });
