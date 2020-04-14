@@ -10,7 +10,6 @@ export function Dog(){
   this.hungry = 0,
   this.happiness = 50,
   this.isAlive = true;
-  this.anger = 0;
 }
 
 

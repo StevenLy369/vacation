@@ -1,9 +1,22 @@
-describe('Thing', () => {
-  let thing;
+/* eslint-disable no-undef */
+import { Dog } from "../src/thing";
+
+describe( "Dog", () => {
+  jest.useFakeTimers();
+  let dog;
 
   beforeEach(() => {
-    person = new Thing();
+    dog = new Dog (hungry);
   });
 
-  test('should ...', () => {});
+  afterEach(function(){
+    jest.clearAllTimers();
+  });
+  
+  
+  test("should increase dogs hunger by 5 after 8 seconds", () => {
+    increaseHunger();
+    jest.advanceTimersByTime(8001);
+    expect(hungry).toEqual(5);
+  });
 });
