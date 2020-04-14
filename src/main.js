@@ -5,11 +5,23 @@ import $ from 'jquery';
 import { Dog } from './thing.js';
 import { Place } from './thing.js';
 
-
+function updateStats(dog){
+  setInterval(()=>{
+    $("#hunger").text("Hunger:"+ dog.hungry);
+    $("#happy").text("Happiness" + dog.happiness);
+},250);    
+}
 
 
 $(document).ready(function(){
+  let dog;
+  dog = new Dog ($("#happy"),50);
+  updateStats();
 
+  $("#btn1").click(function(event){
+    event.preventDefault();
+
+  });
 
 
 
