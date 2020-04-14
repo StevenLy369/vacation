@@ -17,30 +17,39 @@ $(document).ready(function(){
     var timeInputFirst = $("input#inputTimeFirst");
     var notesInputFirst = $("input#notesInputFirst");
     var firstPlace = new Place(locationInputFirst.val(), landmarkInputFirst.val(), timeInputFirst.val(), notesInputFirst.val());
-    $("#firstLocation").text("Location:" + firstPlace.locationInputFirst);
-    console.log(locationInputFirst);
-    console.log("#placeInputFirst");
+    $("#firstLocation").text("Location: " + firstPlace.location);
+    $("#firstLandmark").text("Landmark: " + firstPlace.landmarks);
+    $("#firstTime").text("Time of Year : " + firstPlace.timeOfYear);
+    $("#firstNote").text("Notes: " + firstPlace.notes);
   });
 
 
 
-//   $("#secondBtn").click(function(event){
-//     event.preventDefault();
-//     var locationInputSecond = $("#placeInputSecond");
-//     var landmarkInputSecond = $("#landmarkInputSecond");
-//     var timeInputSecond = $("#inputTimeSecond");
-//     var notesInputSecond = $("#notesInputSecond");
-  
-//   });
+  $("#secondBtn").click(function(event){
+    event.preventDefault();
+    var locationInputSecond = $("#placeInputSecond");
+    var landmarkInputSecond = $("#landmarkInputSecond");
+    var timeInputSecond = $("#inputTimeSecond");
+    var notesInputSecond = $("#notesInputSecond");
+    var secondPlace = new Place(locationInputSecond.val(), landmarkInputSecond.val(), timeInputSecond.val(), notesInputSecond.val());
+    $("#secondLocation").text("Location: " + secondPlace.location);
+    $("#secondLandmark").text("Landmark: " + secondPlace.landmarks);
+    $("#secondTime").text("Time of Year : " + secondPlace.timeOfYear);
+    $("#secondNote").text("Notes: " + secondPlace.notes);
+  });
 
-//   $("#thirdBtn").click(function(event){
-//     event.preventDefault();
-//     var locationInputThird = $("#placeInputThird");
-//     var landmarkInputThird = $("#landmarkInputThird");
-//     var timeInputThird = $("#inputTimeThird");
-//     var notesInputThird = $("#notesInputThird");
-
-//   });
+  $("#thirdBtn").click(function(event){
+    event.preventDefault();
+    var locationInputThird = $("#placeInputThird");
+    var landmarkInputThird = $("#landmarkInputThird");
+    var timeInputThird = $("#inputTimeThird");
+    var notesInputThird = $("#notesInputThird");
+    var thirdPlace = new Place(locationInputThird.val(), landmarkInputThird.val(), timeInputThird.val(), notesInputThird.val());
+    $("#thirdLocation").text("Location: " + thirdPlace.location);
+    $("#thirdLandmark").text("Landmark: " + thirdPlace.landmarks);
+    $("#thirdTime").text("Time of Year : " + thirdPlace.timeOfYear);
+    $("#thirdNote").text("Notes: " + thirdPlace.notes);
+  });
 });
 
 
