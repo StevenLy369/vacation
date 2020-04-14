@@ -19,6 +19,14 @@ Dog.prototype.decreaseHappy = function() {
   },12000);
 };
 
+Dog.prototype.increaseHappy = function(){
+  return this.happiness += 5;
+};
+
+Dog.prototype.decreaseHunger = function(){
+  return this.hungry -=5;
+}
+
 Dog.prototype.increaseHunger = function() {
   setInterval(() => {
     return this.hungry += 5;

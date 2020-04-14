@@ -2,7 +2,7 @@ body{
     text-align: center;
     background-color: bisque;
     font-family: monospace;
-    font-size: 28px;
+    font-size: 18px;
 
 }
 
@@ -24,8 +24,15 @@ body{
 }
 
 #pic {
-    height: 500px;
-    width: 1000;
+    height: 450px;
+    width: 725px;
+    border-radius: 35px;
+}
+
+#pic2 {
+    height: 450px;
+    width: 235px;
+    margin-top: 10px;
     border-radius: 35px;
 }
 
